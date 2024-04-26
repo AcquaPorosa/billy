@@ -30,6 +30,15 @@
     <ClInclude Include="src\value.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\vm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\compiler.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scanner.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\chunk.cpp">
@@ -45,6 +54,15 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\value.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compiler.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scanner.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>

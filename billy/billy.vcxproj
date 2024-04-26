@@ -129,16 +129,22 @@
   <ItemGroup>
     <ClInclude Include="src\common.h" />
     <ClInclude Include="src\chunk.h" />
+    <ClInclude Include="src\compiler.h" />
     <ClInclude Include="src\debug.h" />
     <ClInclude Include="src\memory.h" />
+    <ClInclude Include="src\scanner.h" />
     <ClInclude Include="src\value.h" />
+    <ClInclude Include="src\vm.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\chunk.cpp" />
+    <ClCompile Include="src\compiler.cpp" />
     <ClCompile Include="src\debug.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\memory.cpp" />
+    <ClCompile Include="src\scanner.cpp" />
     <ClCompile Include="src\value.cpp" />
+    <ClCompile Include="src\vm.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
