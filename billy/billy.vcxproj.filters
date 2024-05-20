@@ -39,30 +39,42 @@
     <ClInclude Include="src\scanner.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\obj.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\table.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\chunk.cpp">
+    <ClCompile Include="src\chunk.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\memory.cpp">
+    <ClCompile Include="src\memory.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\main.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\debug.cpp">
+    <ClCompile Include="src\debug.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\value.cpp">
+    <ClCompile Include="src\value.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\vm.cpp">
+    <ClCompile Include="src\vm.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\compiler.cpp">
+    <ClCompile Include="src\compiler.c">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\scanner.cpp">
+    <ClCompile Include="src\scanner.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obj.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table.c">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,17 +21,9 @@ static void repl() {
     }
 }
 
-static void runFile(const char* path) {
-    char* source = readFile(path);
-    InterpretResult result = interpret(source);
-    free(source);
-
-    if (result == INTERPRET_COMPILE_ERROR) exit(65);
-    if (result == INTERPRET_RUNTIME_ERROR) exit(70);
-}
-
 static char* readFile(const char* path) {
-    FILE* file = fopen(path, "rb");
+    FILE* file;
+    fopen_s(&file, path, "rb");
     if (file == NULL) {
         fprintf(stderr, "Could not open file \"%s\".\n", path);
         exit(74);
@@ -56,6 +48,17 @@ static char* readFile(const char* path) {
     fclose(file);
     return buffer;
 }
+
+static void runFile(const char* path) {
+    char* source = readFile(path);
+    InterpretResult result = interpret(source);
+    free(source);
+
+    if (result == INTERPRET_COMPILE_ERROR) exit(65);
+    if (result == INTERPRET_RUNTIME_ERROR) exit(70);
+}
+
+
 
 int main(int argc, char** argv)
 {

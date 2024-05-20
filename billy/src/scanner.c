@@ -121,11 +121,6 @@ static bool isAlpha(char c) {
 		c == '_';
 }
 
-static Token identifier() {
-	while (isAlpha(peek()) || isDigit(peek())) advance();
-	return makeToken(identifierType());
-}
-
 static TokenType checkKeyword(int start, int length,
 	const char* rest, TokenType type) {
 	if (scanner.current - scanner.start == start + length &&
@@ -169,6 +164,15 @@ static TokenType identifierType() {
 	}
 	return TOKEN_IDENTIFIER;
 }
+
+static Token identifier() {
+	while (isAlpha(peek()) || isDigit(peek())) advance();
+	return makeToken(identifierType());
+}
+
+
+
+
 
 void initScanner(const char* source) {
 	scanner.start = source;
