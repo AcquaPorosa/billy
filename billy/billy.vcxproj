@@ -80,6 +80,7 @@
     <ClInclude Include="src\compiler.h" />
     <ClInclude Include="src\debug.h" />
     <ClInclude Include="src\memory.h" />
+    <ClInclude Include="src\native.h" />
     <ClInclude Include="src\obj.h" />
     <ClInclude Include="src\scanner.h" />
     <ClInclude Include="src\table.h" />
@@ -92,6 +93,7 @@
     <ClCompile Include="src\debug.c" />
     <ClCompile Include="src\main.c" />
     <ClCompile Include="src\memory.c" />
+    <ClCompile Include="src\native.c" />
     <ClCompile Include="src\obj.c" />
     <ClCompile Include="src\scanner.c" />
     <ClCompile Include="src\table.c" />

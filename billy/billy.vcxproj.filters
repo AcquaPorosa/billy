@@ -45,6 +45,9 @@
     <ClInclude Include="src\table.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\native.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\chunk.c">
@@ -75,6 +78,9 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\table.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\native.c">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
